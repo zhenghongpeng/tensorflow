@@ -110,4 +110,4 @@ EXPOSE 8888
 
 RUN ${PYTHON} -m ipykernel.kernelspec
 
-CMD ["bash", "-c", "source /etc/bash.bashrc && jupyter notebook --notebook-dir=/tf --ip 0.0.0.0 --no-browser --allow-root"]
+CMD ["--runtime=nvidia", "bash", "-c", "source /etc/bash.bashrc && jupyter notebook --notebook-dir=/tf --ip 0.0.0.0 --no-browser --allow-root"]

@@ -43,3 +43,5 @@ gradleBuild
 Podfile.lock
 Pods
 xcuserdata
+/tensorflow/tools/api/
+*.tar.gz
